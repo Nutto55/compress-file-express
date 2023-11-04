@@ -4,10 +4,10 @@ import path from 'path'
 
 import { Request, Response } from 'express'
 import formidable from 'formidable'
-// import ffmpegPath from '@ffmpeg-installer/ffmpeg'
+import ffmpegPath from '@ffmpeg-installer/ffmpeg'
 import ffmpeg from 'fluent-ffmpeg'
 
-// ffmpeg.setFfmpegPath(ffmpegPath.path)
+ffmpeg.setFfmpegPath(ffmpegPath.path)
 
 const VALID_VIDEO_MIME_TYPES = ['video/mp4', 'video/quicktime', 'video/3gpp']
 
